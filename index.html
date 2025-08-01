@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Status App</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#007bff" />
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ff9800">
+
+</head>
+<body>
+  <h1> Status gives you vibes</h1>
+  <button id="share-app" class="app-share-btn">🔗 Share This App</button>
+  <div id="status-container"></div>
+
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('✅ Service Worker Registered'));
+    }
+  </script>
+</body>
+</html>

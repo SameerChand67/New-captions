@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  background: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.app-share-btn {
+  display: block;
+  margin: 1rem auto;
+  padding: 0.6rem 1.2rem;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.category {
+  margin-bottom: 2rem;
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.category h2 {
+  color: #ff9800;
+  margin-bottom: 0.5rem;
+}
+
+.status {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  background-color: #ff9800;  /* ✅ Orange color */
+  border-radius: 6px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.buttons {
+  margin-top: 0.3rem;
+}
+
+button.copy-btn {
+  background: #28a745;
+  color: white;
+}
+
+button.share-btn {
+  background: #007bff;
+  color: white;
+}
+
+button {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+.intro {
+  background: linear-gradient(90deg, #ff9800, #ff5722, #f44336);
+  color: white;
+  padding: 1.2rem;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 1rem;
+  animation: fadeIn 1s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.intro h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.intro p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Fullscreen Intro */
+.intro-screen {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #ff9800, #ff5722, #f44336);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  color: white;
+  animation: fadeInIntro 1s ease-out;
+}
+
+.intro-content {
+  text-align: center;
+  padding: 2rem;
+}
+
+.intro-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.intro-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.intro-content button {
+  background: white;
+  color: #ff5722;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@keyframes fadeInIntro {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
